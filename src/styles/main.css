@@ -1,0 +1,164 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+  background-color: #f4f4f4; /* Fondo claro neutral */
+  color: #333; /* Texto oscuro */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e; /* Fondo oscuro */
+  color: #f4f4f4; /* Texto claro */
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+body.dark-mode a {
+  color: #f4f4f4;
+}
+
+body.dark-mode a:hover {
+  color: #6c757d;
+}
+
+/* Botones */
+button {
+  background-color: #6c757d; /* Gris neutral */
+  color: #f4f4f4;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+button:hover {
+  background-color: #5a6268; /* Gris oscuro */
+}
+
+/* Encabezado */
+header {
+  background: #333; /* Fondo oscuro para encabezado */
+  color: #f4f4f4; /* Texto claro */
+  padding: 1rem 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header nav ul li {
+  margin: 0 1rem;
+}
+header nav ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+  color: #6c757d; /* Gris neutral para hover */
+}
+header h1 {
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+header p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Contenido principal */
+main {
+  padding: 2rem;
+}
+main section {
+  margin-bottom: 2rem;
+}
+main section h2 {
+  color: #333; /* Encabezados más neutros */
+  border-bottom: 2px solid #6c757d; /* Línea sobria */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+main section p {
+  margin-bottom: 1rem;
+}
+main section ul {
+  list-style: none;
+}
+main section ul li {
+  margin: 0.5rem 0;
+}
+main section ul li a {
+  color: #333;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+main section ul li a:hover {
+  color: #6c757d; /* Gris neutral para hover */
+}
+main section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Pie de página */
+footer {
+  background: #333;
+  color: #f4f4f4;
+  padding: 1rem 0;
+  text-align: center;
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+footer nav ul li {
+  margin: 0 0.5rem;
+}
+footer nav ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+footer nav ul li a:hover {
+  color: #6c757d; /* Gris neutral para hover */
+}
+footer p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+  main {
+    padding: 1rem;
+  }
+}
